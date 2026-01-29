@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Valentine’s Day, My Love</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Patrick+Hand&family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="paper-noise" aria-hidden="true"></div>
+
+    <!-- Top hanging hearts (reused across pages) -->
+    <div class="garland" aria-hidden="true">
+      <div class="string"></div>
+      <div class="hearts">
+        <span class="heart h1"></span>
+        <span class="heart h2"></span>
+        <span class="heart h3"></span>
+        <span class="heart h4"></span>
+        <span class="heart h5"></span>
+        <span class="heart h6"></span>
+        <span class="heart h7"></span>
+      </div>
+    </div>
+
+    <main class="deck" id="deck" aria-live="polite">
+      <!-- PAGE 1 -->
+      <section class="page active page--red" data-page="1" aria-label="Page 1">
+        <div class="page-inner">
+          <div class="hero">
+            <div class="love-box">
+              <div class="love-box__inner">
+                <p class="love-box__eyebrow">For you</p>
+                <h1 class="love-box__title">Happy Valentine’s Day<br /><span>my love</span></h1>
+                <p class="love-box__sub">
+                  I made this little “presentation” just for you — because you deserve all the cute things.
+                </p>
+              </div>
+              <div class="love-box__doodles" aria-hidden="true">
+                <span class="sparkle s1"></span>
+                <span class="sparkle s2"></span>
+                <span class="sparkle s3"></span>
+                <span class="mini-heart mh1"></span>
+                <span class="mini-heart mh2"></span>
+                <span class="mini-heart mh3"></span>
+              </div>
+            </div>
+
+            <div class="choco-wrap" aria-hidden="true">
+              <div class="choco">
+                <div class="choco__lid"></div>
+                <div class="choco__box">
+                  <div class="choco__tray">
+                    <span class="bonbon b1"></span>
+                    <span class="bonbon b2"></span>
+                    <span class="bonbon b3"></span>
+                    <span class="bonbon b4"></span>
+                    <span class="bonbon b5"></span>
+                    <span class="bonbon b6"></span>
+                  </div>
+                </div>
+                <div class="choco__tag">♡</div>
+              </div>
+              <p class="scribble-caption">heart chocolate box</p>
+            </div>
+          </div>
+
+          <div class="nav">
+            <button class="postcard-nav" data-next type="button" aria-label="Next page">
+              <span class="postcard-nav__stamp" aria-hidden="true"></span>
+              <span class="postcard-nav__title">Next</span>
+              <span class="postcard-nav__subtitle">open me →</span>
+            </button>
+            <div class="click-me" aria-hidden="true">
+              <svg viewBox="0 0 180 90" class="click-me__arrow">
+                <path
+                  d="M10,70 C40,20 90,20 135,45 C155,56 165,62 175,60"
+                  fill="none"
+                  stroke="rgba(30,10,15,.7)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-dasharray="2 8"
+                />
+                <path
+                  d="M168,54 L178,60 L169,67"
+                  fill="none"
+                  stroke="rgba(30,10,15,.7)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="click-me__text">click me</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 2 -->
+      <section class="page page--cream" data-page="2" aria-label="Page 2">
+        <div class="page-inner">
+          <div class="topline">
+            <h2 class="headline">
+              you <span class="headline__heart">♥</span> me <span class="headline__forever">forever</span>
+            </h2>
+            <div class="xoxo" aria-hidden="true">xoxo</div>
+          </div>
+
+          <div class="grid-2">
+            <aside class="postcard">
+              <div class="postcard__header">
+                <div class="postcard__to">To: <span class="scribble">my favorite person</span></div>
+                <div class="postcard__stamp" aria-hidden="true"></div>
+              </div>
+              <h3 class="postcard__title">Things I love about you</h3>
+              <ul class="postcard__list" id="likesList">
+                <li>Your laugh (it’s my favorite sound)</li>
+                <li>The way you care so deeply</li>
+                <li>Your kindness, even on hard days</li>
+                <li>How you make ordinary moments feel special</li>
+                <li>How passionate you are</li>
+                <li>How beautiful you are, every part of you</li>
+              </ul>
+              <p class="postcard__note">P.S. I could write a thousand more. But no space...</p>
+            </aside>
+
+            <div class="photo-center">
+              <div class="photo-frame">
+                <img
+                  src="./assets/FullSizeRender.jpg"
+                  alt="A photo of us"
+                  onerror="this.src='./assets/placeholder-us.svg'; this.onerror=null;"
+                />
+                <div class="photo-frame__heart-outline" aria-hidden="true"></div>
+              </div>
+              <p class="scribble-caption">our picture</p>
+            </div>
+          </div>
+
+          <div class="nav">
+            <button class="postcard-nav" data-next type="button" aria-label="Next page">
+              <span class="postcard-nav__stamp" aria-hidden="true"></span>
+              <span class="postcard-nav__title">Next</span>
+              <span class="postcard-nav__subtitle">turn the page →</span>
+            </button>
+            <div class="click-me" aria-hidden="true">
+              <svg viewBox="0 0 180 90" class="click-me__arrow">
+                <path
+                  d="M10,70 C40,20 90,20 135,45 C155,56 165,62 175,60"
+                  fill="none"
+                  stroke="rgba(30,10,15,.7)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-dasharray="2 8"
+                />
+                <path
+                  d="M168,54 L178,60 L169,67"
+                  fill="none"
+                  stroke="rgba(30,10,15,.7)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="click-me__text">click me</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 3 -->
+      <section class="page page--red-soft" data-page="3" aria-label="Page 3">
+        <div class="page-inner">
+          <h2 class="headline headline--center">
+            with all my heart <span class="headline__heart">♥</span>
+          </h2>
+
+          <div class="note-paper">
+            <div class="note-paper__tape t1" aria-hidden="true"></div>
+            <div class="note-paper__tape t2" aria-hidden="true"></div>
+            <div class="note-paper__lines" aria-hidden="true"></div>
+            <div class="note-paper__content">
+              <p class="handwriting">
+                Hey love,<br /><br />
+                I just want you to know how grateful I am for you. Every day with you feels like my favorite
+                place — calm, warm, and full of little beautiful moments I never want to forget. Thank you for being
+                you, for choosing me. I love you berry much, my love<br /><br />
+                Always yours,<br />
+                <span class="signature">— (Javad)</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="nav">
+            <button class="postcard-nav" data-next type="button" aria-label="Next page">
+              <span class="postcard-nav__stamp" aria-hidden="true"></span>
+              <span class="postcard-nav__title">Next</span>
+              <span class="postcard-nav__subtitle">one more →</span>
+            </button>
+            <div class="click-me" aria-hidden="true">
+              <svg viewBox="0 0 180 90" class="click-me__arrow">
+                <path
+                  d="M10,70 C40,20 90,20 135,45 C155,56 165,62 175,60"
+                  fill="none"
+                  stroke="rgba(30,10,15,.7)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-dasharray="2 8"
+                />
+                <path
+                  d="M168,54 L178,60 L169,67"
+                  fill="none"
+                  stroke="rgba(30,10,15,.7)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="click-me__text">click me</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 4 -->
+      <section class="page page--garden" data-page="4" aria-label="Page 4">
+        <div class="page-inner">
+          <h2 class="headline headline--center">
+            will you be my valentine? <span class="headline__heart">♥</span>
+          </h2>
+
+          <div class="bouquet-wrap" aria-hidden="true">
+            <div class="bouquet">
+              <div class="bouquet__paper"></div>
+              <div class="bouquet__stem s1"></div>
+              <div class="bouquet__stem s2"></div>
+              <div class="bouquet__stem s3"></div>
+              <div class="bouquet__flower f1"></div>
+              <div class="bouquet__flower f2"></div>
+              <div class="bouquet__flower f3"></div>
+              <div class="bouquet__bow"></div>
+            </div>
+            <p class="scribble-caption">a flower bouquet for you</p>
+          </div>
+
+          <div class="answer-row" id="answerRow">
+            <button class="answer answer--yes" id="yesBtn" type="button">YES</button>
+            <button class="answer answer--no" id="noBtn" type="button">no</button>
+          </div>
+
+          <p class="tiny-hint" id="noHint" aria-live="polite"></p>
+
+          <div class="nav nav--muted">
+            <button class="postcard-nav" data-next type="button" aria-label="Next page (also works if you click Yes)">
+              <span class="postcard-nav__stamp" aria-hidden="true"></span>
+              <span class="postcard-nav__title">Next</span>
+              <span class="postcard-nav__subtitle">or say yes →</span>
+            </button>
+            <div class="click-me" aria-hidden="true">
+              <svg viewBox="0 0 180 90" class="click-me__arrow">
+                <path
+                  d="M10,70 C40,20 90,20 135,45 C155,56 165,62 175,60"
+                  fill="none"
+                  stroke="rgba(30,10,15,.6)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-dasharray="2 8"
+                />
+                <path
+                  d="M168,54 L178,60 L169,67"
+                  fill="none"
+                  stroke="rgba(30,10,15,.6)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div class="click-me__text">click me</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAGE 5 (YES) -->
+      <section class="page page--cream" data-page="5" aria-label="Final page">
+        <div class="page-inner">
+          <h2 class="headline headline--center">
+            yayyyy <span class="headline__heart">♥</span>
+          </h2>
+          <p class="final-scribble">it’s you &amp; me — always.</p>
+
+          <div class="photo-center">
+            <div class="photo-frame photo-frame--big">
+              <img
+                src="./assets/us-2.jpg"
+                alt="Another photo of us"
+                onerror="this.src='./assets/placeholder-us.svg'; this.onerror=null;"
+              />
+              <div class="photo-frame__heart-outline" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <div class="nav nav--end">
+            <button class="postcard-nav postcard-nav--restart" data-goto="1" type="button" aria-label="Back to start">
+              <span class="postcard-nav__stamp" aria-hidden="true"></span>
+              <span class="postcard-nav__title">Again</span>
+              <span class="postcard-nav__subtitle">rewind →</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
